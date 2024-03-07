@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+        <record id="purchase_manager_group" model="res.groups">
+             <field name="name">Purchase Mangers</field>
+        </record>
+    </data>
+
+</odoo>

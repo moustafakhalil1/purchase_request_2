@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="rejection_reason_view_form" model="ir.ui.view">
+            <field name="name">rejection reasone form</field>
+            <field name="model">rejection.reason</field>
+            <field name="arch" type="xml">
+              <form string="Register Payment">
+                <group>
+                    <field name="name" />
+                </group>
+                <footer>
+                    <button string="Confirm" name="action_add_rejection" type="object" class="oe_highlight" close="1" data-hotkey="q"/>
+                    <button string="Cancel" class="btn btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+              </form>
+            </field>
+        </record>
+      <record id="action_rejection_reason" model="ir.actions.act_window">
+        <field name="name">Rejection Reason</field>
+        <field name="res_model">rejection.reason</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+      </record>
+    </data>
+</odoo>
